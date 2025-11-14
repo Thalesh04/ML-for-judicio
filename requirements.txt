@@ -1,7 +1,7 @@
 fastapi==0.115.0
 uvicorn[standard]==0.30.6
 sentence-transformers==3.1.1
-torch==2.4.1          # CPU-only; Render free tier has no GPU
+torch==2.4.1 --index-url https://download.pytorch.org/whl/cpu          # CPU-only; Render free tier has no GPU
 numpy==2.1.2
 scikit-learn==1.5.2
 nltk==3.9.1
