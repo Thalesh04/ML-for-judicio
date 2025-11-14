@@ -3,7 +3,7 @@ services:
     name: lamini-analyzer
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn api:app --host 0.0.0.0 --port $PORT
-    plan: free            # upgrade to starter/pro if you need more RAM
+    startCommand: python -m uvicorn api:app --host 0.0.0.0 --port $PORT
+    plan: free
     autoDeploy: true
     region: oregon
